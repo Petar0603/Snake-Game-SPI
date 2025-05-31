@@ -3,7 +3,7 @@
 
 #include <Arduino.h>
 
-#define NUM_MATRICES 2
+#define NUM_MATRICES 1
 #define MATRIX_SIZE 8
 #define MAX_SNAKE_LENGTH NUM_MATRICES*MATRIX_SIZE*MATRIX_SIZE
 

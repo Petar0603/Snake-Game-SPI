@@ -7,8 +7,8 @@
 typedef struct Player Player;
 
 struct Player {
-  char name[4];
-  int score;
+  char name[4]; // three characters and null terminator
+  int score; 
 };
 
 typedef enum{preGame,inGame,gameOver} State;

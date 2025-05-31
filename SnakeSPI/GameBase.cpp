@@ -1,14 +1,14 @@
 #include "GameBase.h"
 
-Snake::Snake() {
-  length = 0;
+Snake::Snake() { // snake constructor that initializes snake object 
+  length = 0; 
 }
 void Snake::generateSnake() {
-  Snake::setLength(2);
-  Snake::setRowAtIndex(1,(int)random(1, MATRIX_SIZE - 1)); 
+  Snake::setLength(2); // starting length value
+  Snake::setRowAtIndex(1,(int)random(1, MATRIX_SIZE - 1)); // random head coordinates, decremented by 1 beacause of borders
   Snake::setColumnAtIndex(1,(int)random(1, MATRIX_SIZE * NUM_MATRICES - 1)); 
-  Snake::setDirection((direction)random(0,4));
-  switch(Snake::returnDirection()) {
+  Snake::setDirection((direction)random(0,4)); // random direction
+  switch(Snake::returnDirection()) { // coordinates of snake tail
     case up:
       Snake::setRowAtIndex(0,returnRowAtIndex(1) + 1); 
       Snake::setColumnAtIndex(0,returnColumnAtIndex(1));
@@ -27,6 +27,7 @@ void Snake::generateSnake() {
     break;
   }
 }
+// functions that set and return parameters of snake
 void Snake::setDirection(direction newDirection) {
   snakeDirection = newDirection;
 }
