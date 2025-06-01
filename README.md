@@ -4,6 +4,9 @@ Realized with Arduino Nano, 8x8 SPI LED matrix, 16x2 LCD and a joystick.
 ---
 ## About
 
+Red button on the breadboard is the start button and the yellow one is the 
+show scoreboard button (scores are shown on the LCD).
+
 Code for the game is written in C++ for ArduinoIDE.
 - 'GameBase' includes the 'Snake' class and 'Dot' struct (one pixel on the matrix).
 - 'SnakeGame' includes the game logic.
