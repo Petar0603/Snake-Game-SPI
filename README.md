@@ -8,10 +8,14 @@ Code for the game is written in C++ for ArduinoIDE.
 - 'GameBase' includes the 'Snake' class and 'Dot' struct (one pixel on the matrix).
 - 'SnakeGame' includes the game logic.
 - 'SnakeSPI' is the run code for Arduino boards.
+
 After the game is completed, based on the player's score, the score can be
 written to EEPROM of Arduino.
+
 Player three character name is input from the Serial monitor.
+
 Three character name and the score are written to EEPROM.
+
 These scores are sorted and only the best three scores are written to EEPROM
 in the end.
 
