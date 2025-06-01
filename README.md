@@ -22,7 +22,7 @@ in the end.
 ---
 ## Photos
 
-Circuit on a breadboard
+Circuit on a breadboard with SPI signals monitored on an oscilloscope
 <div align="center"> <img src="/images and pdfs/circuit/circuit_on_a_breadboard.jpg"> </div>
 
 In game state
